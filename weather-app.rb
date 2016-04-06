@@ -6,6 +6,10 @@ area = area.chomp
 
 puts "The location you entered was " + area
 
+puts "Please enter your phone number."
+wtn = gets
+wtn = wtn.chomp
+
 #puts 'Choose your preferred temperature type: c or f'
 
 #type = gets
@@ -26,7 +30,7 @@ auth_token = "ff0e7bbb8af0adb7998a52ab7185b304"
 @client = Twilio::REST::Client.new(account_sid, auth_token)
 message = @client.account.messages.create(
 :from => "+1 857-576-2043",
-:to => "+1 781-771-8098",
+:to => wtn,
 :body => ans
 )
 
