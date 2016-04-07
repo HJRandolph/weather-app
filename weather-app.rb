@@ -14,7 +14,7 @@ weather = barometer.measure
 
 	ans = "Today's high: " + weather.today.high.f + "F. \n" + 
 	"Currently in " + area + " it's " + weather.current.temperature.f + "F. \n" +
-	"Tomorrow the high will be " + weather.tomorrow.high.f + "F."
+	"Tomorrow's high will be " + weather.tomorrow.high.f + "F."
 
 require 'rubygems'
 require 'twilio-ruby'
@@ -30,3 +30,4 @@ message = @client.account.messages.create(
 )
 
 puts message.to
+
