@@ -14,7 +14,8 @@ weather = barometer.measure
 
 	ans = "Today's high: " + weather.today.high.f + "F. \n" + 
 	"Currently in " + area + " it's " + weather.current.temperature.f + "F. \n" +
-	"Tomorrow's high will be " + weather.tomorrow.high.f + "F."
+
+	"Tomorrow the high will be " + weather.tomorrow.high.f + "F."
 
 require 'rubygems'
 require 'twilio-ruby'
