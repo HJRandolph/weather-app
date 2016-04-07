@@ -4,22 +4,17 @@ puts 'Please enter your zip code, postal code, or city and state/province.'
 area = gets
 area = area.chomp
 
-puts "The location you entered was " + area
-
 puts "Please enter your phone number."
 wtn = gets
 wtn = wtn.chomp
 
-#puts 'Choose your preferred temperature type: c or f'
-
-#type = gets
-#type = type.chomp
-
 
 barometer = Barometer.new(area)
 weather = barometer.measure
-puts weather.tomorrow.high.f
-	ans = 'The current temperature in ' + area + ' is ' + weather.current.temperature.f + 'F' + ' Tomorrow the high will be ' + weather.tomorrow.high.f + 'F.'
+
+	ans = "Today's high: " + weather.today.high.f + "F. \n" + 
+	"Currently in " + area + " it's " + weather.current.temperature.f + "F. \n" +
+	"Tomorrow the high will be " + weather.tomorrow.high.f + "F."
 
 require 'rubygems'
 require 'twilio-ruby'
