@@ -13,7 +13,7 @@ barometer = Barometer.new(area)
 weather = barometer.measure
 
 	ans = "\nToday's high: " + weather.today.high.f + "F. \n" + 
-	"Currently in " + area + " it's " + weather.current.temperature.f + "F " "and " + weather.current.condition.downcase + "." + "\nTomorrow will have a high of " + weather.tomorrow.high.f + "F."
+	"Currently in " + area + " it's " + weather.current.temperature.f + "F and " + weather.current.condition.downcase + "." + "\nTomorrow will have a high of " + weather.tomorrow.high.f + "F."
 
 require 'rubygems'
 require 'twilio-ruby'
