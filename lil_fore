@@ -1,0 +1,5 @@
+require 'barometer'
+area = 02184
+
+barometer = Barometer.new(area)
+weather = barometer.measure
